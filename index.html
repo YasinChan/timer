@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>计时/倒计时插件</h2>
+        <hr>
+        <h3>计时</h3>
+        <div class="aaa"></div>
+        <hr>
+        <h3>倒计时</h3>
+        <div class="bbb"></div>
+        <hr>
+    </div>
+    
+</body>
+<script src="timer.js"></script>
+<script>
+    var el1 = document.querySelector('.aaa')
+    var el2 = document.querySelector('.bbb')
+    new Timer(el1,{
+        startTime: 600,
+        isTimer: true,
+        formate: 'd/h/m/s/ss'
+    })
+    new Timer(el2,{
+        startTime: 600,
+        isTimer: false,
+        formate: 'd/h/m/s/ss'
+    })
+</script>
+</html>
