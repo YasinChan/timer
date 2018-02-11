@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +11,197 @@
             width: 800px;
             margin: 0 auto;
         }
+
+        .bg {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .time-bg {
+            position: absolute;
+            left: 100px;
+            display:inline-block;
+            border-radius: 5px;
+            background:#ccc;
+            box-shadow:0 0 5px #000;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>计时/倒计时插件</h2>
         <hr>
         <h3>计时</h3>
-        <div class="aaa"></div>
+        <div class='bg'>
+            <span>d/h/m/s/ss</span>
+            <span class="time-bg aaa"></span>
+        </div>
+        <div class='bg'>
+            <span>h/m/s/ss</span>
+            <span class="time-bg aa1"></span>
+        </div>
+        <div class='bg'>
+            <span>m/s/ss</span>
+            <span class="time-bg aa2"></span>
+        </div>
+        <div class='bg'>
+            <span>s/ss</span>
+            <span class="time-bg aa3"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h/m/s</span>
+            <span class="time-bg aa4"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h/m</span>
+            <span class="time-bg aa5"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h</span>
+            <span class="time-bg aa6"></span>
+        </div>
+        <div class='bg'>
+            <span>d</span>
+            <span class="time-bg aa7"></span>
+        </div>
         <hr>
         <h3>倒计时</h3>
-        <div class="bbb"></div>
+        <div class='bg'>
+            <span>d/h/m/s/ss</span>
+            <span class="time-bg bbb"></span>
+        </div>
+        <div class='bg'>
+            <span>h/m/s/ss</span>
+            <span class="time-bg bb1"></span>
+        </div>
+        <div class='bg'>
+            <span>m/s/ss</span>
+            <span class="time-bg bb2"></span>
+        </div>
+        <div class='bg'>
+            <span>s/ss</span>
+            <span class="time-bg bb3"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h/m/s</span>
+            <span class="time-bg bb4"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h/m</span>
+            <span class="time-bg bb5"></span>
+        </div>
+        <div class='bg'>
+            <span>d/h</span>
+            <span class="time-bg bb6"></span>
+        </div>
+        <div class='bg'>
+            <span>d</span>
+            <span class="time-bg bb7"></span>
+        </div>
         <hr>
     </div>
-    
+
 </body>
 <script src="timer.js"></script>
 <script>
     var el1 = document.querySelector('.aaa')
+    var el11 = document.querySelector('.aa1')
+    var el12 = document.querySelector('.aa2')
+    var el13 = document.querySelector('.aa3')
+    var el14 = document.querySelector('.aa4')
+    var el15 = document.querySelector('.aa5')
+    var el16 = document.querySelector('.aa6')
+    var el17 = document.querySelector('.aa7')
+
     var el2 = document.querySelector('.bbb')
-    new Timer(el1,{
-        startTime: 600,
+    var el21 = document.querySelector('.bb1')
+    var el22 = document.querySelector('.bb2')
+    var el23 = document.querySelector('.bb3')
+    var el24 = document.querySelector('.bb4')
+    var el25 = document.querySelector('.bb5')
+    var el26 = document.querySelector('.bb6')
+    var el27 = document.querySelector('.bb7')
+    new Timer(el1, {
+        startTime: 600000,
         isTimer: true,
         formate: 'd/h/m/s/ss'
     })
-    new Timer(el2,{
-        startTime: 600,
+    new Timer(el11, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'h/m/s/ss'
+    })
+    new Timer(el12, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'm/s/ss'
+    })
+    new Timer(el13, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 's/ss'
+    })
+    new Timer(el14, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'd/h/m/s'
+    })
+    new Timer(el15, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'd/h/m'
+    })
+    new Timer(el16, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'd/h'
+    })
+    new Timer(el17, {
+        startTime: 600000,
+        isTimer: true,
+        formate: 'd'
+    })
+    new Timer(el2, {
+        startTime: 600000,
         isTimer: false,
         formate: 'd/h/m/s/ss'
     })
+    new Timer(el21, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'h/m/s/ss'
+    })
+    new Timer(el22, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'm/s/ss'
+    })
+    new Timer(el23, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 's/ss'
+    })
+    new Timer(el24, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'd/h/m/s'
+    })
+    new Timer(el25, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'd/h/m'
+    })
+    new Timer(el26, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'd/h'
+    })
+    new Timer(el27, {
+        startTime: 600000,
+        isTimer: false,
+        formate: 'd'
+    })
 </script>
+
 </html>
