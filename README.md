@@ -1,6 +1,6 @@
 # 计时器/倒计时插件
 
-[示例](https://yasinchan.com/timer/index.html)
+[示例](https://yasinchan.github.io/timer/)
 
 ### 介绍
 
